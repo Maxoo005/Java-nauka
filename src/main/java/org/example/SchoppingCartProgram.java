@@ -31,5 +31,8 @@ public class SchoppingCartProgram {
 
             System.out.println("To razem będzie " + total + ( "zł"));
 
+
+            scanner.close();
+
         }
 }
