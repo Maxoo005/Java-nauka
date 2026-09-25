@@ -20,8 +20,8 @@ public class BankProgram {
 
             switch (wybor) {
                 case 1 -> pokazbalans(balans);
-                case 2 -> balans += wpłatapieniędzy();
-                case 3 -> balans -= wypłatapieniędzy(balans);
+                case 2 -> balans += wplatapieniedzy();
+                case 3 -> balans -= wyplatapieniedzy(balans);
                 case 4 -> isExit = true;
                 default -> System.out.println("Zły wybór");
 
@@ -38,7 +38,7 @@ public class BankProgram {
         System.out.printf("Twój balans: %.2f zł\n", balans);
     }
 
-    static double wpłatapieniędzy(){
+    static double wplatapieniedzy(){
         Scanner scanner = new Scanner(System.in);
         double kwota;
         System.out.print("Ile chcesz wpłacić");
@@ -52,7 +52,7 @@ public class BankProgram {
         }
     }
 
-    static double wypłatapieniędzy(double balans){
+    static double wyplatapieniedzy(double balans){
         Scanner scanner = new Scanner(System.in);
         double kwota;
         System.out.print("Ile chcesz wypłacić");
